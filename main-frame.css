@@ -1,0 +1,141 @@
+.portfolio-child {
+  width: 1440px;
+  height: 1024px;
+  position: relative;
+  background-color: var(--color-midnightblue);
+  display: none;
+  max-width: 100%;
+}
+.p-o-r {
+  width: 301px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.p-o-r-t-f-o-l-i-o-wrapper {
+  width: 357px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+.row-frames-child,
+.row-frames-item {
+  height: 261px;
+  width: 347px;
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}
+.row-frames-item {
+  height: 323px;
+  width: 378px;
+}
+.row-frames {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.foreground-rectangles-icon,
+.frames-pair-icon {
+  height: 300px;
+  width: 420px;
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 1;
+}
+.frames-pair-icon {
+  height: 288px;
+  width: 380px;
+}
+.background-rectangles {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 100%;
+  gap: var(--gap-xl);
+}
+.content-frame,
+.portfolio2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.content-frame {
+  width: 1159px;
+  align-items: flex-start;
+  gap: 111px 0;
+}
+.portfolio2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-midnightblue);
+  align-items: center;
+  padding: 85px 75px 90px var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-50xl);
+  text-align: left;
+  font-size: 36px;
+  color: var(--color-white);
+  font-family: var(--font-inika);
+}
+.main-frame {
+  width: 100%;
+  height: 1024px;
+  position: relative;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .content-frame {
+    gap: 111px 0;
+  }
+  .portfolio2 {
+    padding-right: var(--padding-18xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .p-o-r {
+    font-size: var(--font-size-10xl);
+  }
+  .background-rectangles,
+  .row-frames {
+    flex-wrap: wrap;
+  }
+  .main-frame {
+    height: auto;
+    min-height: 1024;
+  }
+}
+@media screen and (max-width: 750px) {
+  .content-frame {
+    gap: 111px 0;
+  }
+  .portfolio2 {
+    gap: var(--gap-50xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .p-o-r {
+    font-size: 22px;
+  }
+  .portfolio2 {
+    gap: var(--gap-50xl);
+  }
+}
